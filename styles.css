@@ -1,0 +1,30 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.bg-image {
+    display: block;
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    background: no-repeat center center;
+    /* change the background image of the landing photo here*/
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/56/Mount_Gambier_Blue_Lake_A.jpg');
+    text-align: center;
+}
+
+.cc-container {
+    padding-top: 50px;
+}
+
+.content {
+    margin: 20px 0px;
+}
+
+textarea {
+    resize: none;
+}
