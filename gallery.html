@@ -6,6 +6,7 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css">
+        <link type="text/css" rel="stylesheet" href="lightgallery/css/lightgallery.css" /> 
         <link rel="stylesheet" type="text/css" href="styles.css">
     </head>
     <body>
@@ -32,14 +33,39 @@
           </div>
         </nav>
         <div class="container cc-container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <h1>Gallery</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam hendrerit accumsan felis sit amet viverra. Vivamus maximus in tortor ac hendrerit. Curabitur sodales dictum augue at fermentum. Phasellus vitae rutrum nulla. Suspendisse quis sapien sed ex sollicitudin ornare nec non dui. Sed aliquam sapien turpis, in imperdiet quam volutpat sit amet. Pellentesque neque purus, imperdiet ac lacinia suscipit, aliquam quis mauris. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer ullamcorper non nulla et rhoncus. Sed pellentesque suscipit tellus sit amet placerat.</p>
-                    <p>Nunc a dapibus neque. Phasellus neque nisl, tincidunt non pharetra efficitur, rutrum nec metus. Praesent molestie vulputate mattis. Praesent euismod condimentum erat, et ornare purus pharetra et. Duis ultrices blandit turpis sed tincidunt. Sed lobortis lacinia hendrerit. In viverra quis tellus nec condimentum. Sed vel dui dui. Etiam vitae ipsum sodales, ultrices dolor sed, elementum mi. Donec sollicitudin massa sit amet justo auctor commodo.</p>
-                    <p>Mauris ullamcorper risus eget tortor semper, ut eleifend sem tincidunt. Pellentesque vulputate convallis enim, nec suscipit eros condimentum quis. Morbi eget leo cursus, molestie nisi nec, accumsan nulla. Praesent congue consequat urna eget posuere. Curabitur condimentum vehicula nunc ut sodales. Vivamus convallis augue nibh. Aliquam neque urna, efficitur in risus ac, fringilla commodo quam. Aenean nunc quam, mollis et congue ac, fringilla ac diam. In hac habitasse platea dictumst. Suspendisse feugiat facilisis egestas. Proin nec ante arcu. Curabitur id eros non metus facilisis ultrices sit amet quis tortor. Suspendisse eu mollis metus, pulvinar aliquet sem. Cras sit amet finibus lacus.</p>
-                </div>
+          <div class="row">
+            <h1 class="text-align">Gallery</h1>
+          </div>
+          <div class="row" id="lightgallery">
+            <div class="col-md-4 item" data-src="gallery.jpg">
+                <img class="full-width img-fluid" src="gallery.jpg">
             </div>
+            <div class="col-md-4 item" data-src="gallery.jpg">
+                <img class="full-width img-fluid" src="gallery.jpg">
+            </div>
+            <div class="col-md-4 item" data-src="gallery.jpg">
+                <img class="full-width img-fluid" src="gallery.jpg">
+            </div>
+            
+          </div>
         </div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="lightgallery/js/lightgallery.js"></script>
+
+        <!-- A jQuery plugin that adds cross-browser mouse wheel support. (Optional) -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+    
+        <!-- lightgallery plugins -->
+        <script src="lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="lightgallery/js/lg-fullscreen.min.js"></script>
+        <script>
+          $(document).ready(function() {
+            $("#lightgallery").lightGallery({
+              selector: '.item',
+              
+            }); 
+          });
+        </script>
     </body>
 </html>

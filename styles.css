@@ -49,3 +49,7 @@ p, li, span, b {
 .bottom-margin {
     margin-bottom: 50px;
 }
+
+.text-align {
+    text-align: center;
+}
