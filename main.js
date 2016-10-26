@@ -1,10 +1,11 @@
-function ppsq(price,sqft) {
+function ppsq(price, sqft) {
     return price / sqft;
 }
 
 $(document).ready(function() {
-    $(".listing-item").each(function() {
-        console.log(this);
+    $(".listing-item .row").each(function(e) {
+        console.log(e);
+        console.log($(this));
     });
 });
 
