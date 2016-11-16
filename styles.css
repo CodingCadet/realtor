@@ -12,7 +12,7 @@ html, body {
     height: 100%;
     width: 100%;
     /* change the background image of the landing photo here*/
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/56/Mount_Gambier_Blue_Lake_A.jpg');
+    background-image: url('img/pexels-photo.jpg');
     text-align: center;
 }
 
